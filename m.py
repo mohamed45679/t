@@ -1,7 +1,7 @@
 import pandas as pd 
 import streamlit as st
 st.title("cars price prediction:")
-from scikit-learn.ensemble import GradientBoostingRegressor 
+from scikit_learn.ensemble import GradientBoostingRegressor 
 model=GradientBoostingRegressor()
 uploaded_file1 = st.file_uploader(r"carrr.csv", type=["csv"], key="1")
 data= pd.read_csv(uploaded_file1)
